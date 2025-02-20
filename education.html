@@ -10,20 +10,15 @@
     <header>
       <!-- Navigation Menu -->
       <nav>
+        <button id="menu-toggle">☰</button>
         <ul id="menu">
           <li><a href="index.html">Home</a></li>
-          <li><a href="index.html#about">About</a></li>
-          <!-- Stays on the same page -->
+          <li><a href="#about">About</a></li>
           <li><a href="skills.html">Skills</a></li>
-          <!-- Links to skills.html -->
           <li><a href="experience.html">Experience</a></li>
-          <!-- Links to experience.html -->
           <li><a href="projects.html">Projects</a></li>
-          <!-- Links to projects.html -->
           <li><a href="education.html">Education</a></li>
-          <!-- Links to projects.html -->
-          <li><a href="index.html#contact">Contact</a></li>
-          <!-- Stays on the same page -->
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </header>
@@ -63,21 +58,31 @@
         </div>
 
         <div class="image-grid">
-            <a href="https://www.linkedin.com/pulse/interview-agertu-diriba-pharo-school-homoshas-scholar/" target="_blank">
-          <img
-            class="graduation-pic"
-            src="medias/graduation.jpeg"
-            alt="Graduation"
-          />
+          <a
+            href="https://www.linkedin.com/pulse/interview-agertu-diriba-pharo-school-homoshas-scholar/"
+            target="_blank"
+          >
+            <img
+              class="graduation-pic"
+              src="medias/graduation.jpeg"
+              alt="Graduation"
+            />
           </a>
           <img
             src="medias/72-virtual-assistant-certificate-agertu-diriba (1).png"
             alt="Virtual Assistant Certificate"
           />
-          <a href="https://www.shecodesfoundation.org/candidates/agertu-diriba-ethiopian" target="_blank">
-          <img src="medias/Shecodes.png" alt="SheCodes Certificate" /></a>
-          <a href="https://www.linkedin.com/pulse/interview-agertu-diriba-pharo-school-homoshas-scholar/" target="_blank">
-          <img src="medias/valedictorian.jpg" alt="">
+          <a
+            href="https://www.shecodesfoundation.org/candidates/agertu-diriba-ethiopian"
+            target="_blank"
+          >
+            <img src="medias/Shecodes.png" alt="SheCodes Certificate"
+          /></a>
+          <a
+            href="https://www.linkedin.com/pulse/interview-agertu-diriba-pharo-school-homoshas-scholar/"
+            target="_blank"
+          >
+            <img src="medias/valedictorian.jpg" alt="" />
           </a>
         </div>
       </div>
@@ -89,4 +94,12 @@
 
     <script src="script.js"></script>
   </body>
+  <script>
+    const menuToggleButton = document.getElementById("menu-toggle");
+    const nav = document.querySelector("nav");
+
+    menuToggleButton.addEventListener("click", () => {
+      nav.classList.toggle("open");
+    });
+  </script>
 </html>

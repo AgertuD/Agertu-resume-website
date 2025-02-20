@@ -1,65 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Skills - Your Name</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <header>
-        <!-- Navigation Menu -->
-        <nav>
-            <ul id="menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="index.html#about">About</a></li> <!-- Stays on the same page -->
-                <li><a href="skills.html">Skills</a></li> <!-- Links to skills.html -->
-                <li><a href="experience.html">Experience</a></li> <!-- Links to experience.html -->
-                <li><a href="projects.html">Projects</a></li> <!-- Links to projects.html -->
-                <li><a href="education.html">Education</a></li> <!-- Links to projects.html -->
-                <li><a href="index.html#contact">Contact</a></li> <!-- Stays on the same page -->
-            </ul>
-        </nav>
+      <!-- Navigation Menu -->
+      <nav>
+        <button id="menu-toggle">☰</button>
+        <ul id="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="skills.html">Skills</a></li>
+          <li><a href="experience.html">Experience</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="education.html">Education</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
     </header>
-    
+
     <!-- Skills Section -->
     <section id="skills">
-        
-        <div class="skills-grid">
-            <div class="skill">HTML</div>
-            <div class="skill">CSS</div>
-            <div class="skill">JavaScript</div>
-            <div class="skill">Responsive Design</div>
-        </div>
-    <div class="skills-container">
+      <div class="skills-grid">
+        <div class="skill">HTML</div>
+        <div class="skill">CSS</div>
+        <div class="skill">JavaScript</div>
+        <div class="skill">Responsive Design</div>
+      </div>
+      <div class="skills-container">
         <div class="skills">
-            <h3>🛠 Technical Skills</h3>
-            <ul style="list-style-type: none;">
-                <li>✅ Front-End: HTML, CSS, JavaScript, Responsive Design</li>
-                <li>✅ Back-End: Node.js, Python</li>
-                <li>✅ Database: MySQL</li>
-                <li>✅ Version Control: Git, GitHub</li>
-                <li>✅ Web Performance & Optimization</li>
-                <li>✅ Form Validation & Accessibility</li>
-            </ul>
+          <h3>🛠 Technical Skills</h3>
+          <ul style="list-style-type: none">
+            <li>✅ Front-End: HTML, CSS, JavaScript, Responsive Design</li>
+            <li>✅ Back-End: Node.js, Python</li>
+            <li>✅ Database: MySQL</li>
+            <li>✅ Version Control: Git, GitHub</li>
+            <li>✅ Web Performance & Optimization</li>
+            <li>✅ Form Validation & Accessibility</li>
+          </ul>
         </div>
         <div class="skills">
-            <h3>🧠 Soft Skills</h3>
-            <ul style="list-style-type: none;" >
-                <li>✅ Creative & Analytical Thinking</li>
-                <li>✅ Attention to Detail</li>
-                <li>✅ Collaboration & Teamwork</li>
-                <li>✅ Communication</li>
-                <li>✅ Continuous Learning & Adaptability</li>
-            </ul>
+          <h3>🧠 Soft Skills</h3>
+          <ul style="list-style-type: none">
+            <li>✅ Creative & Analytical Thinking</li>
+            <li>✅ Attention to Detail</li>
+            <li>✅ Collaboration & Teamwork</li>
+            <li>✅ Communication</li>
+            <li>✅ Continuous Learning & Adaptability</li>
+          </ul>
         </div>
-    </div>
+      </div>
     </section>
-    
+
     <footer>
-        <p>&copy; 2025 Your Name. All Rights Reserved.</p>
+      <p>&copy; 2025 Your Name. All Rights Reserved.</p>
     </footer>
-    
+
     <script src="script.js"></script>
-</body>
+  </body>
+  <script>
+    const menuToggleButton = document.getElementById("menu-toggle");
+    const nav = document.querySelector("nav");
+
+    menuToggleButton.addEventListener("click", () => {
+      nav.classList.toggle("open");
+    });
+  </script>
 </html>

@@ -47,6 +47,10 @@ nav ul li a.active {
   transition: background-color 0.3s, color 0.3s;
 }
 
+#menu-toggle {
+  display: none;
+}
+
 /* Hero Section */
 #hero {
   height: 100vh;
@@ -315,7 +319,7 @@ h2 {
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2); /* Adds depth */
 }
 
-/*.................................................... Responsive Design .................................................  */
+/*....... Responsive Design ...........  */
 @media (max-width: 1024px) {
   #about {
     flex-direction: column;

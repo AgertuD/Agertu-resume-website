@@ -10,20 +10,15 @@
     <header>
       <!-- Navigation Menu -->
       <nav>
+        <button id="menu-toggle">☰</button>
         <ul id="menu">
           <li><a href="index.html">Home</a></li>
-          <li><a href="index.html#about">About</a></li>
-          <!-- Stays on the same page -->
+          <li><a href="#about">About</a></li>
           <li><a href="skills.html">Skills</a></li>
-          <!-- Links to skills.html -->
           <li><a href="experience.html">Experience</a></li>
-          <!-- Links to experience.html -->
           <li><a href="projects.html">Projects</a></li>
-          <!-- Links to projects.html -->
           <li><a href="education.html">Education</a></li>
-          <!-- Links to projects.html -->
-          <li><a href="index.html#contact">Contact</a></li>
-          <!-- Stays on the same page -->
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </header>
@@ -39,7 +34,7 @@
             track their expenses, set budgets, and analyze spending patterns.
             Integrated a user-friendly interface with essential features such as
             income/expense tracking, visual data reports, and alerts for
-            budgeting goals. <br>
+            budgeting goals. <br />
             Technologies used: React, JavaScript, HTML/CSS,
           </p>
 
@@ -48,7 +43,7 @@
             Created a web-based virtual assistant that helps users organize
             tasks, set reminders, and manage schedules. Focused on a clean,
             simple UI that integrates task management and voice command
-            features. <br>
+            features. <br />
             Technologies used: JavaScript, Node.js
           </p>
         </div>
@@ -62,4 +57,12 @@
 
     <script src="script.js"></script>
   </body>
+  <script>
+    const menuToggleButton = document.getElementById("menu-toggle");
+    const nav = document.querySelector("nav");
+
+    menuToggleButton.addEventListener("click", () => {
+      nav.classList.toggle("open");
+    });
+  </script>
 </html>
