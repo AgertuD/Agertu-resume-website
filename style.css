@@ -76,7 +76,7 @@ nav ul li a.active {
   max-width: 600px; /* Set a max width */
 }
 .frontPage_pic {
-  width: 500px; 
+  width: 500px;
   height: auto;
   border-radius: 10px; /* rounded corners */
 }
@@ -315,5 +315,131 @@ h2 {
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2); /* Adds depth */
 }
 
+/*.................................................... Responsive Design .................................................  */
+@media (max-width: 1024px) {
+  #about {
+    flex-direction: column;
+    text-align: center;
+  }
 
+  .frontPage_pic {
+    max-width: 80%;
+  }
+  .education-container {
+    flex-direction: column;
+    align-items: center;
+  }
 
+  .education-content {
+    text-align: center;
+  }
+
+  .image-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    text-align: center;
+    padding: 0;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  input,
+  textarea {
+    width: 90%;
+  }
+  .skills-container {
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+    padding: 15px;
+  }
+
+  .skills {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 8px;
+    padding: 15px;
+  }
+
+  .HireMe-button {
+    width: 100%;
+    text-align: center;
+    font-size: 1rem;
+  }
+  .education-item,
+  .certifications {
+    padding: 15px;
+  }
+
+  .image-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  #education h2 {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  #hero h1 {
+    font-size: 24px;
+  }
+
+  .HireMe-button {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+  .skills-container {
+    padding: 10px;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+    gap: 5px;
+  }
+
+  .HireMe-button {
+    font-size: 0.9rem;
+    padding: 8px 15px;
+  }
+
+  footer {
+    font-size: 14px;
+  }
+  #education {
+    padding: 30px 10px;
+  }
+
+  #education h2 {
+    font-size: 22px;
+  }
+
+  .education-item,
+  .certifications {
+    padding: 10px;
+  }
+
+  .education-content {
+    text-align: left;
+  }
+
+  .image-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .image-grid img {
+    max-height: 200px;
+  }
+}
