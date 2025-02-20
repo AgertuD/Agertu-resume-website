@@ -1,0 +1,319 @@
+/* General Styles */
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+  padding-top: 100px;
+}
+
+/* Header */
+header {
+  background-color: #222;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+/* Navigation */
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+/* Active Navigation Link Styling */
+nav ul li a.active {
+  background-color: #f8e4de; /* Highlight color */
+  color: #222; /* Dark text for contrast */
+  font-weight: bold;
+  padding: 10px 15px; /* Creates the rectangle */
+  border-radius: 8px; /* Soft rounded corners */
+  display: inline-block; /* Ensures background fits text */
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Hero Section */
+#hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, #007991, #78ffd6);
+  color: white;
+  text-align: center;
+}
+#hero h1 {
+  font-size: 80px;
+}
+#hero p {
+  font-size: 40px;
+}
+#about {
+  display: flex; /* Use flexbox */
+  align-items: center; /* Align items vertically */
+  justify-content: space-between; /* Space out the image and text */
+  gap: 20px; /* Space between image and text */
+  padding: 20px;
+}
+.contentAboutMe {
+  flex: 1; /* Take up remaining space */
+  max-width: 600px; /* Set a max width */
+}
+.frontPage_pic {
+  width: 500px; 
+  height: auto;
+  border-radius: 10px; /* rounded corners */
+}
+.sendButton {
+  font-size: 18px;
+  font-weight: bold;
+  padding: 12px 24px;
+  color: #fff;
+  background: #2980b9;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+}
+.sendButton:hover {
+  transform: scale(1.1);
+}
+.skills-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 800px;
+  margin: auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.skills {
+  width: 45%;
+  background: #007991;
+  color: white;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.HireMe-button {
+  background-color: #ff7f50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+  margin: 10px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.HireMe-button:hover {
+  background-color: #ff4500;
+}
+
+.HireMe-button.secondary {
+  background-color: #3498db;
+}
+
+.HireMe-button.secondary:hover {
+  background-color: #2980b9;
+}
+
+/* Skills Grid */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 10px;
+  padding: 20px;
+  text-align: center;
+}
+
+.skill {
+  background: #007991;
+  color: white;
+  padding: 10px;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+/* General Dark Mode Styles */
+.dark-mode {
+  background-color: #000;
+  color: white;
+}
+
+.dark-mode nav ul li a {
+  color: #f8e4de;
+}
+
+.dark-mode .active {
+  background-color: #f8e4de;
+  color: #000;
+}
+
+/* Footer */
+footer {
+  padding: 20px;
+  text-align: center;
+  background-color: #000;
+  color: white;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .cta-button {
+    font-size: 1rem;
+    padding: 8px 15px;
+  }
+}
+
+/*Experience page*/
+#experience {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+.experience-container {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.experience-content {
+  flex: 1;
+}
+
+.media-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+}
+
+.image-grid img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+video {
+  width: 100%;
+  border-radius: 8px;
+}
+
+/*projects page*/
+#projects {
+  padding: 50px;
+  text-align: center;
+  color: white;
+}
+
+h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: black;
+}
+
+.projects-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.project-card {
+  background: #007991;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 90%;
+  max-width: 600px;
+  text-align: left;
+  transition: transform 0.3s, box-shadow 0.3s;
+  color: #000;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.project-card h3 {
+  color: white;
+}
+
+/*Education*/
+
+#education {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+.education-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.education-content {
+  text-align: left;
+}
+
+.education-item {
+  margin-bottom: 15px;
+}
+
+.certifications {
+  margin-top: 20px;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  justify-content: center;
+}
+
+.image-grid img {
+  width: 100%;
+  height: auto; /* Keeps original aspect ratio */
+  max-height: 250px; /* Keeps images uniform */
+  object-fit: contain; /* Prevents cropping */
+  border-radius: 8px;
+  display: block;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+/* Hover effect: Slightly enlarges the image and adds a shadow */
+.image-grid img:hover {
+  transform: scale(1.1); /* Increases size by 10% */
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2); /* Adds depth */
+}
+
+
+
