@@ -3,15 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Your Name - Resume</title>
+    <title>Agertu - Resume</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
       <!-- Navigation Menu -->
       <nav>
+        <!-- Button to toggle menu visibility on smaller screens -->
         <button id="menu-toggle">☰</button>
         <ul id="menu">
+          <!-- Navigation Links -->
           <li><a href="index.html">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="skills.html">Skills</a></li>
@@ -25,15 +27,17 @@
 
     <!-- Hero Section -->
     <section id="hero">
+      <!-- Hero Title and Description -->
       <h1>Agertu Diriba</h1>
       <p>Creative Developer | Problem Solver | Innovator</p>
+      <!-- Button to navigate to contact section -->
       <a href="#contact" class="HireMe-button">Hire Me</a>
     </section>
 
     <!-- About Me Section -->
     <section id="about">
       <div class="contentAboutMe">
-        <h2>About Me</h2>
+        <h2 id="White_Headers">About Me</h2>
         <p>
           🚀 "I am a dedicated Software Engineering student with a strong
           passion for web development and health technology. I thrive on
@@ -55,36 +59,48 @@
           to make a difference through technology.
         </p>
       </div>
+      <!-- Image related to the About Me section -->
       <img
         class="frontPage_pic"
         src="medias/2Image 2024-11-11 at 15.41.30_48b9b15b.jpg"
-        alt=""
+        alt="Agertu"
       />
     </section>
 
     <!-- Contact Section -->
     <section id="contact">
       <h2>Contact</h2>
+      <!-- Contact Form for user input -->
       <form id="contactForm">
+        <!-- Name Input Field -->
         <input type="text" id="name" placeholder="Your Name" required />
+        <!-- Email Input Field -->
         <input type="email" id="email" placeholder="Your Email" required />
+        <!-- Message Textarea Field -->
         <textarea id="message" placeholder="Your Message" required></textarea>
+        <!-- Send Button -->
         <button class="sendButton" type="submit">Send</button>
       </form>
     </section>
 
     <!-- Footer Section -->
     <footer>
-      <p>&copy; 2025 Agertu Diriba. All Rights Reserved.</p>
+      <!-- Footer Information -->
+      <p>&copy; 2025 Agertu. All Rights Reserved.</p>
+      <!-- Button to toggle dark mode -->
       <button id="theme-toggle">🌙Dark Mode</button>
     </footer>
 
+    <!-- External JavaScript -->
     <script src="script.js"></script>
   </body>
+
   <script>
+    // Menu Toggle Functionality for mobile responsiveness
     const menuToggleButton = document.getElementById("menu-toggle");
     const nav = document.querySelector("nav");
 
+    // Event listener to toggle the navigation menu visibility
     menuToggleButton.addEventListener("click", () => {
       nav.classList.toggle("open");
     });
